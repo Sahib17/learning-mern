@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="text-3xl font-bold text-gray-900 dark:text-white mb-3">Edit User</h1>
+            <a href="/view" class="text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-300 text-sm font-medium">See all users →</a>
+    <form action="/update/<%= user._id %>" method="post">
+        <input type="text" name="name" placeholder="New Name" value="<%= user.name %>" id="">
+        <input type="text" name="email" placeholder="New Mail" value="<%= user.email %>" id="">
+        <input type="text" name="image" placeholder="New Image" value="<%= user.image %>" id="">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
