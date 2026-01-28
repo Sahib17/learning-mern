@@ -1,5 +1,5 @@
 # MERN Stack
-- Mongo DB
+- Mongo DBa
 - Express
 - React
 - Node
